@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+    color: white;
+}
+
+body{
+    display: flex;
+    height: 100vh;;
+    background-image: url(../img/background.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    
+}
+
+.divisiontop{
+    height: 50px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: row;
+}
+
+nav li{
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    margin: auto auto;
+    
+    
+}
+
+nav li a{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+nav li a:hover{
+    text-decoration: overline #81adff;
+    
+}
+
+body h1{
+    margin: auto;
+    font-size: 100px;
+}
+
+
+
+
+::-webkit-scrollbar {
+	width: 5px;
+	}
+
+-moz-scrollbar-track {
+	width:5px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: black;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background:black;
+}
+
+
+
+@media (max-width: 576px){
+    body{
+        background-image: url(../img/backgroundMobile.png);
+        
+    }
+
+    .divisiontop{
+        background-color: rgba(0, 0, 0, 0.7)
+    }
+
+    nav li a{
+        font-size: 20px;
+        
+    }
+    
+}
